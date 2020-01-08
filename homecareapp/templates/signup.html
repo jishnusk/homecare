@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="nav">
+		<h1>SIGNUP</h1>
+	</div><hr>
+	<div class="img-container img-thumbnail" style="float: right; margin-top: 100px; margin-right: 100px;">
+	<label style="font-family: 'Josefin Sans', sans-serif; font-size: 20px; color: cornflowerblue;" >Sign up and get new customers delivered to your inbox</label><br>
+	<img src="{% static 'worker.gif' %} " alt="image" >
+	
+	</div>
+	<form class="col-lg-6" method="POST" action="/homecare/prorgstn">
+		{% csrf_token %}
+		<div class="form-group">
+			<label>name</label><input type="text" class="form-control"
+			 name="fullname"  required>
+		</div>
+		<div class="form-group">
+			<label>gender</label><br>
+			<input type="radio" value="female" name="gender" class=""><span style="padding: 10px;">Female</span>
+			<input type="radio" value="male"  name="gender" class=""><span style="padding: 10px;">Male</span>
+			<input type="radio" value="custom" name="gender" class=""><span style="padding: 10px;">Custom</span>
+		</div>
+		<div class="form-group ">
+			<label>email</label><input  type="email" class="form-control"
+			 name="em" value="" required>
+        </div>
+        <div class="form-group">
+			<label>mobile</label><input  type="number" class="form-control"
+            name="mb" required>
+		</div>
+        <div class="form-group">
+			<label>pincode</label><input  type="number" class="form-control"
+            name="pn" required>
+		</div>
+		<div class="form-group ">
+			<label>Experience in Years</label><input  type="number" class="form-control"
+			 name="ex" >
+		</div>
+		<div class="form-group">
+			<label>Personal Website</label><input type="text" class="form-control"
+			 name="pw">
+		</div>
+		<div class="form-group">
+			<label>Area of expertize</label><br>
+			<input type="radio" value="painter" name="expt" class=""><span style="padding: 10px;">painter</span>
+			<input type="radio" value="cleanig"  name="expt" class=""><span style="padding: 10px;">cleanig</span>
+			<input type="radio" value="plumbing" name="expt" class=""><span style="padding: 10px;">plumbing</span>
+			<input type="radio" value="carpentry" name="expt" class=""><span style="padding: 10px;">carpentry</span>
+			<input type="radio" value="electrician" name="expt" class=""><span style="padding: 10px;">electrician</span>
+			<input type="radio" value="interior designer" name="expt" class=""><span style="padding: 10px;">interior designer</span>
+		</div>
+		<div class="form-group" >
+			<label>password</label><input type="password" class="form-control"  required>
+		</div>
+		<div class="form-group" >
+			<label>confirm password</label><input type="password" class="form-control" name="pswd" required>
+		</div>
+		<div>
+			<button class="btn btn-primary" type="submit">Signup</button>
+		</div><br>
+		
+	</form>
+</body>
+
+</html>

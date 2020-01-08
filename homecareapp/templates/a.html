@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+         <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+<script>
+   $(document).ready(function(){
+       $("#planone").click(function(){
+         $("#1500sqft").show();
+       });
+       $("#planonecl").click(function(){
+         $("#1500sqft").hide();
+       });
+       $("#plantwo").click(function(){
+         $("#1400sqft").show();
+       });
+       $("#plantwocl").click(function(){
+         $("#1400sqft").hide();
+       });
+       $("#planthree").click(function(){
+         $("#1300sqft").show();
+       });
+       $("#planthreecl").click(function(){
+         $("#1300sqft").hide();
+       });
+       $("#planfour").click(function(){
+         $("#1200sqft").show();
+       });
+       $("#planfourcl").click(function(){
+         $("#1200sqft").hide();
+       });
+       $("#planfive").click(function(){
+         $("#1100sqft").show();
+       });
+       $("#planfivecl").click(function(){
+         $("#1100sqft").hide();
+       });
+       $("#plansix").click(function(){
+         $("#1000sqft").show();
+       });
+       $("#plansixcl").click(function(){
+         $("#1000sqft").hide();
+       });
+       $("#planseven").click(function(){
+         $("#900sqft").show();
+       });
+       $("#plansevencl").click(function(){
+         $("#900sqft").hide();
+       });
+       $("#planeight").click(function(){
+         $("#800sqft").show();
+       });
+       $("#planeightcl").click(function(){
+         $("#800sqft").hide();
+       });
+       $("#plannine").click(function(){
+         $("#700sqft").show();
+       });
+       $("#planninecl").click(function(){
+         $("#700sqft").hide();
+       });
+       $("#planten").click(function(){
+         $("#600sqft").show();
+       });
+       $("#plantencl").click(function(){
+         $("#600sqft").hide();
+       });
+    });
+       </script>
+</head>
+
+<body>
+    <div class="container" id="plans" style="width: 100%;">
+        <h1  style="font-family: 'Josefin Sans', sans-serif; margin-left: 30px;">HOME PLANS</h1>
+        <ul>         
+        <div class="img-thumbnail" ><li><h4><b>1500 SQFT</b></h4><a id="planone" href="#"><img src="{% static '1500qft1.jpg' %}" width="200" height="150"></a></li></div>
+        <div class="img-thumbnail"><li><h4><b>1400 SQFT</b></h4><a id="plantwo" href="#"><img src="{% static '1400sqftplan-2-1.jpg' %}" width="200" height="150"></a></li></div>
+        <div class="img-thumbnail" ><li><h4><b>1300 SQFT</b></h4><a id="planthree" href="#"><img src="{% static '1300sqftplan-3-1.jpg' %}" width="200" height="150"></a></li></div>
+        <div class="img-thumbnail" > <li><h4><b>1200 SQFT</p></h4><a id="planfour" href="#"><img src="{% static '1200sqftplan-4-1.jpg' %}" width="200" height="150"></a></li></div>
+        <div class="img-thumbnail" ><li><h4><b>1100 SQFT</b></h4><a id="planfive" href="#"><img src="{% static '1100sqftplan-5-1.jpg' %}" width="200" height="150"></a></li></div>
+        <div class="img-thumbnail"><li><h4><b>1000 SQFT</b></h4><a id="plansix" href="#"><img src="{% static '1000sqftplan-6-1.jpg' %}" width="200" height="150"></a></li></div>
+        <div class="img-thumbnail"> <li><h4><b>900 SQFT</b></h4><a id="planseven" href="#"><img src="{% static '900sqftplan-7-1.jpg' %}" width="200" height="150"></a></li></div>
+        <div class="img-thumbnail"> <li><h4><b>800 SQFT</b></h4><a id="planeight" href="#"><img src="{% static '800sqftplan-8-1.jpg' %}" width="200" height="150"></a></li></div>
+         <div class="img-thumbnail"><li><h4><b>700 SQFT</b></h4><a id="plannine" href="#"><img src="{% static '700sqftplan-9-1.jpg' %}" width="200" height="150"></a></li></div>
+        <div class="img-thumbnail"><li><h4><b>600 SQFT</b></h4><a id="planten" href="#"><img src="{% static '600sqftplan-10-1.jpg' %}" width="200" height="150"></a></li></div>
+</ul>
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid; background-color: white;" id="1500sqft">
+        <button  class="closebtn btn-danger" id="planonecl">CLOSE</button>
+        <div class="box"> 
+            <img src="1500qft1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px;">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1. This house is designed as a five bedroom, double residency home. Each bedroom has its OWN dressing room attach to toilet. The kitchen has an independent wash-room.
+            </p>
+            <p>2. Both residences have a common staircase and entrance portico.</p>
+        </div>
+        <div class="box"> 
+            <img src="1500sgft2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+        <div class="box"> 
+            <img src="1500sqft2.jpg" alt="1500sqft2.jpg" style="border: solid; margin-left: 200px; padding: 20px;  height: 400px; width: 400px;"> 
+        </div>
+
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid;  background-color: white;"   id="1400sqft">
+        <button  class="closebtn btn-danger" id="plantwocl">CLOSE</button>
+        <div class="box"> 
+            <img src="1400sqftplan-2-1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px; ">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1. A spacious layout, the various spaces in this design flow into one another. Entrance to the house is from the spacious portico, which is designed as a double car parking space.
+             </p>
+            <p>2. Upstairs, an open balcony accessible from the drawing hall provides a feeling of openness and spaciousness in this house.</p>
+        </div>
+        <div class="box"> 
+            <img src="plan-2-2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+        <div class="box"> 
+            <img src="plan-2-3.jpg" alt="1500sqft2.jpg" style="border: solid; margin-left: 200px; padding: 20px;  height: 400px; width: 400px;"> 
+        </div>
+
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid;  background-color: white;"  id="1300sqft">
+        <button  class="closebtn btn-danger" id="planthreecl">CLOSE</button>
+        <div class="box"> 
+            <img src="1300sqftplan-3-1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px;">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1. This design features a two bedroom residence on each storey, with an open portico connecting to the stair case.</p>
+            <p> 2. The hierarchy of spaces interchanges here. This house is organized in two linear bays, with one bay having the drawing, dinning and kitchen and the other bay the staircase and two bedrooms.</p>
+            <p> 3. The staircase leads to the living area on the upper floor. The living room is attached to an open terrace area with the passage connecting it to the dining and kitchen spaces.</p>
+        </div>
+        <div class="box"> 
+            <img src="plan-3-2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+        <div class="box"> 
+            <img src="plan-3-3.jpg" alt="1500sqft2.jpg" style="border: solid; margin-left: 200px; padding: 20px;  height: 400px; width: 400px;"> 
+        </div>
+
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid;  background-color: white;"  id="1200sqft">
+        <button  class="closebtn btn-danger" id="planfourcl">CLOSE</button>
+        <div class="box"> 
+            <img src="1200sqftplan-4-1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px;">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1. This design features a five bedroom residence spread across two stories of the house. The front entrance opens into the drawing and dining room, or living area.
+
+                </p>
+            <p>
+                2. On the ground floor, there are two bedrooms while the upper floor has three bedrooms. The master bedroom overlooks the main road.</p>
+            <p>
+                3. Upstairs the daughter's room and family space has a balcony overlooking the main road. This balcony and ground floor entrance lobby walls are rough plastered with siding design in the wall, painted in dark grey colour.</p>
+        </div>
+        <div class="box"> 
+            <img src="plan-4-2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+        <div class="box"> 
+            <img src="plan-4-3.jpg" alt="1500sqft2.jpg" style="border: solid; margin-left: 200px; padding: 20px;  height: 400px; width: 400px;"> 
+        </div>
+
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid;  background-color: white;"  id="1100sqft">
+        <button  class="closebtn btn-danger" id="planfivecl">CLOSE</button>
+        <div class="box"> 
+            <img src="1100sqftplan-5-1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px;">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1. This house is designed as a five bedroom, double residency home. Each bedroom has its OWN dressing room attach to toilet. The kitchen has an independent wash-room. </p>
+            <p>2. Both residences have a common staircase and entrance portico.</p>
+            <p>3. The living area or hall separates each room from flowing into one another.</p>
+        </div>
+        <div class="box"> 
+            <img src="plan-5-2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+        <div class="box"> 
+            <img src="plan-5-3.jpg" alt="1500sqft2.jpg" style="border: solid; margin-left: 200px; padding: 20px;  height: 400px; width: 400px;"> 
+        </div>
+
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid;  background-color: white;"  id="1000sqft">
+        <button  class="closebtn btn-danger" id="plansixcl">CLOSE</button>
+        <div class="box"> 
+            <img src="1000sqftplan-6-1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px;">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1. This is a symmetrical layout plan for a three bedroom house. While one bedroom is on the ground floor, two are on first floor.
+
+               </p>
+            <p>
+                2.The entrance is through the portico, which provides access to the living room and staircase. On the upper floor, the staircase opens into the balcony and living area.
+                </p>
+            <p> 3. The master toilet is spacious enough to hold a bath tub or shower enclosure. The semi-circular arch divides the dining area from the living area, providing an interesting interior.</p>
+        </div>
+        <div class="box"> 
+            <img src="plan-6-2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+        <div class="box"> 
+            <img src="plan-6-3.jpg" alt="1500sqft2.jpg" style="border: solid; margin-left: 200px; padding: 20px;  height: 400px; width: 400px;"> 
+        </div>
+
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid;  background-color: white;"  id="900sqft">
+        <button  class="closebtn btn-danger" id="plansevencl">CLOSE</button>
+        <div class="box"> 
+            <img src="900sqftplan-7-1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px;">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1.his is a duplex house designed with double parking space. </p>
+            <p> 2.The multipurpose hall is used as the living area, while the open staircase leads upstairs. Space below the staircase on the ground floor is used for a bathroom</p>
+        <p> 3.Two bedrooms with attached bathrooms are located on the upper floor, where the north-east corner space is used by a study and pooja room.</p>
+        </div>
+        <div class="box"> 
+            <img src="plan-7-2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+        <div class="box"> 
+            <img src="plan-7-3.jpg" alt="1500sqft2.jpg" style="border: solid; margin-left: 200px; padding: 20px;  height: 400px; width: 400px;"> 
+        </div>
+
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid;  background-color: white;"  id="800sqft">
+        <button  class="closebtn btn-danger" id="planeightcl">CLOSE</button>
+        <div class="box"> 
+            <img src="800sqftplan-8-1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px;">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1. The entrance from the east side opens into a long hall, which houses the spacious dining and living spaces.
+
+                </p>
+            <p>2.This large hall has four cascade windows that ventilate the entire space.</p>
+            <p> 3. Bathing and kitchen spaces are designed in a way to provide space for cupboards and a bathtub.</p>
+        </div>
+        <div class="box"> 
+            <img src="plan-8-2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+       
+
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid;  background-color: white;"  id="700sqft">
+        <button  class="closebtn btn-danger" id="planninecl">CLOSE</button>
+        <div class="box"> 
+            <img src="700sqftplan-9-1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px;">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1. This plan comfortably serves the needs of a two bedroom house on each floor. The entrance is through the living room which provides an ample seating area.
+</p>
+            <p>2.The entrance porch connects to the staircase, ensuring that privacy of the two floors is maintained.</p>
+            <p> 3.All rooms have adequate ventilation. Two balconies on the upper flor have a sloped roof and feature big picture windows that add the visual appeal.</p>
+        </div>
+        <div class="box"> 
+            <img src="plan-9-2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+        <div class="box"> 
+            <img src="plan-9-3.jpg" alt="1500sqft2.jpg" style="border: solid; margin-left: 200px; padding: 20px;  height: 400px; width: 400px;"> 
+        </div>
+
+    </div>
+    <div class="modal" style="overflow: scroll; border: solid;  background-color: white;"  id="600sqft">
+        <button  class="closebtn btn-danger" id="plantencl">CLOSE</button>
+        <div class="box"> 
+            <img src="600sqftplan-10-1.jpg" alt="1500sqft" style="border: solid; padding: 20px; margin-left:200px; margin-top: 20px;">
+        </div>
+        <div class="box" style=" margin-left: 10px;">
+            <p>1.In this design, the entrance verandah steps down into a spacious living room. Further on, it leads into the dining area that adjoins the living area.
+
+              </p>
+            <p>  2.The Master bedroom has its sequence of spaces laid out, while the verandah has an open staircase that leads further up to the balcony.</p>
+            <p> 3.Both the verandah and the balcony serve as a sit-out. The balcony's roof is designed with a slight slope and lower in height compared to the height of the other room.</p>
+        </div>
+        <div class="box"> 
+            <img src="plan-10-2.jpg" alt="1500sgft2.jpg" style="border: solid; float: left; padding: 20px; height: 400px; width: 400px;"> 
+        </div>
+        <div class="box"> 
+            <img src="plan-10-3.jpg" alt="1500sqft2.jpg" style="border: solid; margin-left: 200px; padding: 20px;  height: 400px; width: 400px;"> 
+        </div>
+
+    </div>
+</html>
