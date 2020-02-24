@@ -1,1 +1,1 @@
-web: gunicorn homecareapp.wsgi --log-file -
+web: gunicorn facebook.wsgi --log-file -
